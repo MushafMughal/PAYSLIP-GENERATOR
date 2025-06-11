@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 91%; /* #E8E8E8 Light Gray */
+    --foreground: 0 0% 20%; /* Dark Gray for text */
+
+    --card: 0 0% 98%; /* Slightly off-white, lighter than background for cards to stand out */
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 20%;
+
+    --primary: 210 31% 28%; /* #30475E Navy Blue */
+    --primary-foreground: 0 0% 98%; /* Light color for text on primary */
+
+    --secondary: 210 30% 88%; /* Lighter shade of Navy for secondary elements */
+    --secondary-foreground: 210 31% 28%; /* Navy Blue for text on secondary */
+
+    --muted: 0 0% 85%; /* Muted color, slightly darker than background */
+    --muted-foreground: 0 0% 40%; /* Muted foreground text */
+
+    --accent: 0 84% 64%; /* #F05454 Orange */
+    --accent-foreground: 0 0% 98%; /* Light color for text on accent */
+
+    --destructive: 0 72% 51%; /* Default destructive red, slightly adjusted for harmony */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 80%; /* Border color, visible on light gray */
+    --input: 0 0% 80%; /* Input border, same as general border */
+    --ring: 210 31% 28%; /* Ring color (focus) to match primary */
+    
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables are not used in this app but kept for consistency */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme properties (inverted/adjusted for dark mode) */
+    --background: 210 20% 12%; /* Dark Navy Blue/Gray */
+    --foreground: 0 0% 90%; /* Light Gray for text */
+
+    --card: 210 20% 15%; /* Slightly lighter than dark background for cards */
+    --card-foreground: 0 0% 90%;
+
+    --popover: 210 20% 10%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 210 40% 60%; /* Lighter Navy Blue for dark mode primary */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 25% 25%; /* Darker shade for secondary elements */
+    --secondary-foreground: 0 0% 85%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 80% 70%; /* Slightly lighter Orange for dark mode accent */
+    --accent-foreground: 0 0% 10%; /* Dark text on accent */
+
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 30%;
+    --input: 210 15% 30%;
+    --ring: 210 40% 60%; /* Ring color to match dark mode primary */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
