@@ -2,7 +2,8 @@
 
 A modern, professional payslip generation application built with Next.js and TypeScript. This application allows HR departments and business owners to quickly generate and download professional PDF payslips from employee data in Excel format.
 
-![Payslip Generator Screenshot](public/Logo.jpg)
+![image](https://github.com/user-attachments/assets/a816ffaa-ead0-4d32-b3ff-2603dbe2329c)
+
 
 ## Features
 
@@ -59,9 +60,13 @@ yarn dev
 
 ### Uploading Employee Data
 
+![image](https://github.com/user-attachments/assets/2327940c-481a-4b08-998b-fb6373b964ae)
+
+
 1. Prepare an Excel file with employee data in the required format
 2. Click the "Upload Excel File" button and select your file
 3. The application will parse the data and display it in a table
+
 
 ### Generating Payslips
 
@@ -75,6 +80,9 @@ yarn dev
 - Wait for the process to complete
 - Click "Download All as ZIP" to download all payslips
 
+![image](https://github.com/user-attachments/assets/535b2221-8e91-46c6-acd1-5b5d1f67d54b)
+
+
 ### Payslip Customization
 
 The payslip template includes:
@@ -84,6 +92,9 @@ The payslip template includes:
 - Summary with total earnings, deductions, and net payable
 - Payment details
 - Company logo
+
+![image](https://github.com/user-attachments/assets/29b777ec-698c-418c-91e8-dabe2efaab70)
+
 
 ## Excel Format Requirements
 
