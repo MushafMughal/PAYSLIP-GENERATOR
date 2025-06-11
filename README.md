@@ -33,8 +33,8 @@ A modern, professional payslip generation application built with Next.js and Typ
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd payslip-generator
+git clone https://github.com/MushafMughal/PAYSLIP-GENERATOR.git
+cd PAYSLIP-GENERATOR
 ```
 
 2. Install dependencies:
